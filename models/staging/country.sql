@@ -11,7 +11,7 @@ SELECT 'Albania', 'AL'
 UNION ALL
 SELECT 'Algeria', 'DZ'
 UNION ALL
-SELECT 'India', 'IND'
+SELECT 'India', 'IN'
 UNION ALL
 SELECT 'United States', 'US'
 UNION ALL

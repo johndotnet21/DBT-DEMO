@@ -713,3 +713,89 @@ SELECT 'Japan', 'JP'
 [0m09:17:02.915934 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107f44260>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108434170>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x12a266f90>]}
 [0m09:17:02.916151 [debug] [MainThread]: Flushing usage events
 [0m09:17:04.473533 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m09:20:40.462920 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106b5ac30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1076a0f20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1076a0d10>]}
+
+
+============================== 09:20:40.467000 | 9e1847e6-831b-447b-bd12-a815969e0f08 ==============================
+[0m09:20:40.467000 [info ] [MainThread]: Running with dbt=1.9.0
+[0m09:20:40.467348 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'version_check': 'True', 'log_path': '/Users/pradeeprai/PycharmProjects/DBT-DEMO/logs', 'profiles_dir': '/Users/pradeeprai/PycharmProjects/DBT-DEMO', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'invocation_command': 'dbt run -m models/staging/country.sql', 'log_format': 'default', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m09:20:41.096223 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '9e1847e6-831b-447b-bd12-a815969e0f08', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10aa92c30>]}
+[0m09:20:41.123275 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '9e1847e6-831b-447b-bd12-a815969e0f08', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10721f8f0>]}
+[0m09:20:41.123923 [info ] [MainThread]: Registered adapter: snowflake=1.9.0
+[0m09:20:41.209074 [debug] [MainThread]: checksum: c99e828bba267739642b5a3ce85f17518764ea526e0e6c4fdc649171c1a66bff, vars: {}, profile: , target: , version: 1.9.0
+[0m09:20:41.284255 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m09:20:41.284660 [debug] [MainThread]: Partial parsing: updated file: tasty_bytes://models/staging/country.sql
+[0m09:20:41.397321 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 2 unused configuration paths:
+- models.DBT-DEMO.staging
+- models.DBT-DEMO.marts
+[0m09:20:41.405334 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '9e1847e6-831b-447b-bd12-a815969e0f08', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11d62f1a0>]}
+[0m09:20:41.454420 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/pradeeprai/PycharmProjects/DBT-DEMO/target/manifest.json
+[0m09:20:41.462333 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/pradeeprai/PycharmProjects/DBT-DEMO/target/semantic_manifest.json
+[0m09:20:41.478091 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '9e1847e6-831b-447b-bd12-a815969e0f08', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11d338f20>]}
+[0m09:20:41.478408 [info ] [MainThread]: Found 53 data tests, 1 model, 8 sources, 591 macros
+[0m09:20:41.478579 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '9e1847e6-831b-447b-bd12-a815969e0f08', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11d0930b0>]}
+[0m09:20:41.480457 [info ] [MainThread]: 
+[0m09:20:41.480654 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m09:20:41.480791 [info ] [MainThread]: 
+[0m09:20:41.481040 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m09:20:41.481490 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_edw_dev_stg'
+[0m09:20:41.557460 [debug] [ThreadPool]: Using snowflake connection "list_edw_dev_stg"
+[0m09:20:41.557697 [debug] [ThreadPool]: On list_edw_dev_stg: /* {"app": "dbt", "dbt_version": "1.9.0", "profile_name": "tasty_bytes", "target_name": "dev", "connection_name": "list_edw_dev_stg"} */
+show terse schemas in database edw_dev_stg
+    limit 10000
+[0m09:20:41.557825 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m09:20:44.699916 [debug] [ThreadPool]: SQL status: SUCCESS 4 in 3.142 seconds
+[0m09:20:44.703914 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_edw_dev_stg, now list_edw_dev_stg_salesforce)
+[0m09:20:44.718352 [debug] [ThreadPool]: Using snowflake connection "list_edw_dev_stg_salesforce"
+[0m09:20:44.718864 [debug] [ThreadPool]: On list_edw_dev_stg_salesforce: /* {"app": "dbt", "dbt_version": "1.9.0", "profile_name": "tasty_bytes", "target_name": "dev", "connection_name": "list_edw_dev_stg_salesforce"} */
+show objects in edw_dev_stg.salesforce limit 10000;
+[0m09:20:44.857056 [debug] [ThreadPool]: SQL status: SUCCESS 1 in 0.138 seconds
+[0m09:20:44.862664 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '9e1847e6-831b-447b-bd12-a815969e0f08', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11d3d5460>]}
+[0m09:20:44.864614 [debug] [Thread-1 (]: Began running node model.tasty_bytes.country
+[0m09:20:44.865316 [info ] [Thread-1 (]: 1 of 1 START sql table model salesforce.country ................................ [RUN]
+[0m09:20:44.865896 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_edw_dev_stg_salesforce, now model.tasty_bytes.country)
+[0m09:20:44.866341 [debug] [Thread-1 (]: Began compiling node model.tasty_bytes.country
+[0m09:20:44.877627 [debug] [Thread-1 (]: Writing injected SQL for node "model.tasty_bytes.country"
+[0m09:20:44.878635 [debug] [Thread-1 (]: Began executing node model.tasty_bytes.country
+[0m09:20:44.911032 [debug] [Thread-1 (]: Writing runtime sql for node "model.tasty_bytes.country"
+[0m09:20:44.911949 [debug] [Thread-1 (]: Using snowflake connection "model.tasty_bytes.country"
+[0m09:20:44.912239 [debug] [Thread-1 (]: On model.tasty_bytes.country: /* {"app": "dbt", "dbt_version": "1.9.0", "profile_name": "tasty_bytes", "target_name": "dev", "node_id": "model.tasty_bytes.country"} */
+create or replace transient table edw_dev_stg.salesforce.country
+         as
+        (
+
+SELECT 'Afghanistan' AS name, 'AF' AS iso_code
+UNION ALL
+SELECT 'Albania', 'AL'
+UNION ALL
+SELECT 'Algeria', 'DZ'
+UNION ALL
+SELECT 'India', 'IN'
+UNION ALL
+SELECT 'United States', 'US'
+UNION ALL
+SELECT 'Japan', 'JP'
+        );
+[0m09:20:45.496583 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.584 seconds
+[0m09:20:45.536388 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '9e1847e6-831b-447b-bd12-a815969e0f08', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11e434cb0>]}
+[0m09:20:45.537051 [info ] [Thread-1 (]: 1 of 1 OK created sql table model salesforce.country ........................... [[32mSUCCESS 1[0m in 0.67s]
+[0m09:20:45.537548 [debug] [Thread-1 (]: Finished running node model.tasty_bytes.country
+[0m09:20:45.538487 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m09:20:45.538771 [debug] [MainThread]: Connection 'model.tasty_bytes.country' was left open.
+[0m09:20:45.539017 [debug] [MainThread]: On model.tasty_bytes.country: Close
+[0m09:20:45.731022 [info ] [MainThread]: 
+[0m09:20:45.731984 [info ] [MainThread]: Finished running 1 table model in 0 hours 0 minutes and 4.25 seconds (4.25s).
+[0m09:20:45.733369 [debug] [MainThread]: Command end result
+[0m09:20:45.775018 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/pradeeprai/PycharmProjects/DBT-DEMO/target/manifest.json
+[0m09:20:45.776738 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/pradeeprai/PycharmProjects/DBT-DEMO/target/semantic_manifest.json
+[0m09:20:45.781094 [debug] [MainThread]: Wrote artifact RunExecutionResult to /Users/pradeeprai/PycharmProjects/DBT-DEMO/target/run_results.json
+[0m09:20:45.781343 [info ] [MainThread]: 
+[0m09:20:45.781649 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m09:20:45.781851 [info ] [MainThread]: 
+[0m09:20:45.782070 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 TOTAL=1
+[0m09:20:45.786141 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 5.360998, "process_in_blocks": "0", "process_kernel_time": 0.614942, "process_mem_max_rss": "204603392", "process_out_blocks": "0", "process_user_time": 3.259923}
+[0m09:20:45.786477 [debug] [MainThread]: Command `dbt run` succeeded at 09:20:45.786414 after 5.36 seconds
+[0m09:20:45.786733 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106b5ac30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11e16d940>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11e16d3d0>]}
+[0m09:20:45.786968 [debug] [MainThread]: Flushing usage events
+[0m09:20:47.291870 [debug] [MainThread]: An error was encountered while trying to flush usage events
