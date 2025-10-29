@@ -1,0 +1,629 @@
+[0m09:06:55.418135 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10426dee0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104974dd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104974bf0>]}
+
+
+============================== 09:06:55.422153 | bff136aa-0c33-477a-b63f-54d5c222f650 ==============================
+[0m09:06:55.422153 [info ] [MainThread]: Running with dbt=1.9.0
+[0m09:06:55.422471 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/Users/pradeeprai/PycharmProjects/DBT-DEMO', 'fail_fast': 'False', 'warn_error': 'None', 'log_path': '/Users/pradeeprai/PycharmProjects/DBT-DEMO/logs', 'debug': 'False', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'introspect': 'True', 'log_format': 'default', 'target_path': 'None', 'invocation_command': 'dbt run -m models/country.sql', 'send_anonymous_usage_stats': 'True'}
+[0m09:06:56.056568 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'bff136aa-0c33-477a-b63f-54d5c222f650', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11a7a6c30>]}
+[0m09:06:56.083573 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'bff136aa-0c33-477a-b63f-54d5c222f650', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x103e652e0>]}
+[0m09:06:56.084196 [info ] [MainThread]: Registered adapter: snowflake=1.9.0
+[0m09:06:56.166678 [error] [MainThread]: Encountered an error:
+Compilation Error
+  dbt found 1 package(s) specified in packages.yml, but only 0 package(s) installed in dbt_packages. Run "dbt deps" to install package dependencies.
+[0m09:06:56.208004 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 0.8286737, "process_in_blocks": "0", "process_kernel_time": 0.59229, "process_mem_max_rss": "167411712", "process_out_blocks": "0", "process_user_time": 2.528962}
+[0m09:06:56.208755 [debug] [MainThread]: Command `dbt run` failed at 09:06:56.208673 after 0.83 seconds
+[0m09:06:56.209074 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10480d1f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11a41e000>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11a747f80>]}
+[0m09:06:56.209323 [debug] [MainThread]: Flushing usage events
+[0m09:06:57.993692 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m09:07:13.510770 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1082fa060>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108db4a10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108db4800>]}
+
+
+============================== 09:07:13.514729 | 9e65ee1d-72ed-4594-8cfb-7999332bf6e0 ==============================
+[0m09:07:13.514729 [info ] [MainThread]: Running with dbt=1.9.0
+[0m09:07:13.515050 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'fail_fast': 'False', 'log_path': '/Users/pradeeprai/PycharmProjects/DBT-DEMO/logs', 'debug': 'False', 'profiles_dir': '/Users/pradeeprai/PycharmProjects/DBT-DEMO', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'log_format': 'default', 'introspect': 'True', 'target_path': 'None', 'invocation_command': 'dbt deps', 'send_anonymous_usage_stats': 'True'}
+[0m09:07:13.568360 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '9e65ee1d-72ed-4594-8cfb-7999332bf6e0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108db6690>]}
+[0m09:07:13.582609 [debug] [MainThread]: Set downloads directory='/var/folders/hc/b8_0r2753j7d3x3_b8xhl9pc0000gn/T/dbt-downloads-jgczia2n'
+[0m09:07:13.582907 [debug] [MainThread]: Making package index registry request: GET https://hub.getdbt.com/api/v1/index.json
+[0m09:07:13.994343 [debug] [MainThread]: Response from registry index: GET https://hub.getdbt.com/api/v1/index.json 200
+[0m09:07:13.995813 [debug] [MainThread]: Making package registry request: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils.json
+[0m09:07:14.065907 [debug] [MainThread]: Response from registry: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils.json 200
+[0m09:07:14.076328 [info ] [MainThread]: Updating lock file in file path: /Users/pradeeprai/PycharmProjects/DBT-DEMO/package-lock.yml
+[0m09:07:14.078597 [debug] [MainThread]: Set downloads directory='/var/folders/hc/b8_0r2753j7d3x3_b8xhl9pc0000gn/T/dbt-downloads-4ubm51r9'
+[0m09:07:14.080965 [info ] [MainThread]: Installing dbt-labs/dbt_utils
+[0m09:07:14.784410 [info ] [MainThread]: Installed from version 1.3.0
+[0m09:07:14.784705 [info ] [MainThread]: Updated version available: 1.3.1
+[0m09:07:14.784943 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'package', 'label': '9e65ee1d-72ed-4594-8cfb-7999332bf6e0', 'property_': 'install', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108eb16d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108eb19a0>]}
+[0m09:07:14.785189 [info ] [MainThread]: 
+[0m09:07:14.785375 [info ] [MainThread]: Updates available for packages: ['dbt-labs/dbt_utils']                 
+Update your versions in packages.yml, then run dbt deps
+[0m09:07:14.787984 [debug] [MainThread]: Resource report: {"command_name": "deps", "command_success": true, "command_wall_clock_time": 1.3118201, "process_in_blocks": "0", "process_kernel_time": 0.195852, "process_mem_max_rss": "111886336", "process_out_blocks": "0", "process_user_time": 0.871255}
+[0m09:07:14.788302 [debug] [MainThread]: Command `dbt deps` succeeded at 09:07:14.788239 after 1.31 seconds
+[0m09:07:14.788518 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1046b67e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108c4b9e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1082a0290>]}
+[0m09:07:14.788723 [debug] [MainThread]: Flushing usage events
+[0m09:07:16.323839 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m09:07:21.374648 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10717b8c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1075094f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107694da0>]}
+
+
+============================== 09:07:21.378483 | 034df71d-0cb0-431b-8cac-e96f361844c2 ==============================
+[0m09:07:21.378483 [info ] [MainThread]: Running with dbt=1.9.0
+[0m09:07:21.378784 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'version_check': 'True', 'log_path': '/Users/pradeeprai/PycharmProjects/DBT-DEMO/logs', 'debug': 'False', 'profiles_dir': '/Users/pradeeprai/PycharmProjects/DBT-DEMO', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt run -m models/country.sql', 'log_format': 'default', 'introspect': 'True', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m09:07:21.979503 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '034df71d-0cb0-431b-8cac-e96f361844c2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10766e840>]}
+[0m09:07:22.006343 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '034df71d-0cb0-431b-8cac-e96f361844c2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1086ec920>]}
+[0m09:07:22.006958 [info ] [MainThread]: Registered adapter: snowflake=1.9.0
+[0m09:07:22.091578 [debug] [MainThread]: checksum: c99e828bba267739642b5a3ce85f17518764ea526e0e6c4fdc649171c1a66bff, vars: {}, profile: , target: , version: 1.9.0
+[0m09:07:22.092066 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m09:07:22.092245 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '034df71d-0cb0-431b-8cac-e96f361844c2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11ca5e0c0>]}
+[0m09:07:22.825157 [error] [MainThread]: Encountered an error:
+Compilation Error
+  Model 'model.tasty_bytes.orders' (models/marts/orders.sql) depends on a node named 'raw_pos_order_detail' which was not found
+[0m09:07:22.829898 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 1.4893072, "process_in_blocks": "0", "process_kernel_time": 0.592858, "process_mem_max_rss": "173277184", "process_out_blocks": "0", "process_user_time": 3.249924}
+[0m09:07:22.830248 [debug] [MainThread]: Command `dbt run` failed at 09:07:22.830193 after 1.49 seconds
+[0m09:07:22.830518 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1076269f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11d58e840>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11d5cc170>]}
+[0m09:07:22.830693 [debug] [MainThread]: Flushing usage events
+[0m09:07:23.983365 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m09:08:09.680285 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104260920>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104e34f20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104e34d10>]}
+
+
+============================== 09:08:09.684174 | adf7d30d-d1de-4c65-9841-62ca34825a9e ==============================
+[0m09:08:09.684174 [info ] [MainThread]: Running with dbt=1.9.0
+[0m09:08:09.684501 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'fail_fast': 'False', 'log_path': '/Users/pradeeprai/PycharmProjects/DBT-DEMO/logs', 'profiles_dir': '/Users/pradeeprai/PycharmProjects/DBT-DEMO', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt run -m models/country.sql', 'static_parser': 'True', 'log_format': 'default', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m09:08:10.297747 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'adf7d30d-d1de-4c65-9841-62ca34825a9e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1028c4bf0>]}
+[0m09:08:10.324929 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'adf7d30d-d1de-4c65-9841-62ca34825a9e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x12f8efc80>]}
+[0m09:08:10.325585 [info ] [MainThread]: Registered adapter: snowflake=1.9.0
+[0m09:08:10.414279 [debug] [MainThread]: checksum: c99e828bba267739642b5a3ce85f17518764ea526e0e6c4fdc649171c1a66bff, vars: {}, profile: , target: , version: 1.9.0
+[0m09:08:10.414755 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m09:08:10.414930 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': 'adf7d30d-d1de-4c65-9841-62ca34825a9e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x12fcd55e0>]}
+[0m09:08:11.174606 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 2 unused configuration paths:
+- models.DBT-DEMO.staging
+- models.DBT-DEMO.marts
+[0m09:08:11.181259 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'adf7d30d-d1de-4c65-9841-62ca34825a9e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x13fd2cf50>]}
+[0m09:08:11.228921 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/pradeeprai/PycharmProjects/DBT-DEMO/target/manifest.json
+[0m09:08:11.236262 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/pradeeprai/PycharmProjects/DBT-DEMO/target/semantic_manifest.json
+[0m09:08:11.250022 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'adf7d30d-d1de-4c65-9841-62ca34825a9e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x13fad03e0>]}
+[0m09:08:11.250296 [info ] [MainThread]: Found 1 model, 53 data tests, 8 sources, 591 macros
+[0m09:08:11.250457 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'adf7d30d-d1de-4c65-9841-62ca34825a9e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1410f3380>]}
+[0m09:08:11.251554 [warn ] [MainThread]: The selection criterion 'models/country.sql' does not match any enabled nodes
+[0m09:08:11.252183 [warn ] [MainThread]: Nothing to do. Try checking your model configs and model specification args
+[0m09:08:11.252422 [debug] [MainThread]: Command end result
+[0m09:08:11.270122 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/pradeeprai/PycharmProjects/DBT-DEMO/target/manifest.json
+[0m09:08:11.271146 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/pradeeprai/PycharmProjects/DBT-DEMO/target/semantic_manifest.json
+[0m09:08:11.272610 [debug] [MainThread]: Wrote artifact RunExecutionResult to /Users/pradeeprai/PycharmProjects/DBT-DEMO/target/run_results.json
+[0m09:08:11.275350 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 1.6325661, "process_in_blocks": "0", "process_kernel_time": 0.579153, "process_mem_max_rss": "184025088", "process_out_blocks": "0", "process_user_time": 3.363921}
+[0m09:08:11.275588 [debug] [MainThread]: Command `dbt run` succeeded at 09:08:11.275542 after 1.63 seconds
+[0m09:08:11.275762 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1006f6810>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x13fce9d00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x13fd8fe30>]}
+[0m09:08:11.275932 [debug] [MainThread]: Flushing usage events
+[0m09:08:12.543434 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m09:08:32.936918 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1084d3a70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1088c8170>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1089e8cb0>]}
+
+
+============================== 09:08:32.940933 | bddfb534-5acb-45fd-8ea5-0e07ddf4dbe1 ==============================
+[0m09:08:32.940933 [info ] [MainThread]: Running with dbt=1.9.0
+[0m09:08:32.941247 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/Users/pradeeprai/PycharmProjects/DBT-DEMO', 'fail_fast': 'False', 'version_check': 'True', 'log_path': '/Users/pradeeprai/PycharmProjects/DBT-DEMO/logs', 'debug': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'static_parser': 'True', 'introspect': 'True', 'invocation_command': 'dbt run -m models/staging/country.sql', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m09:08:33.546705 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'bddfb534-5acb-45fd-8ea5-0e07ddf4dbe1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11e8d2c30>]}
+[0m09:08:33.574006 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'bddfb534-5acb-45fd-8ea5-0e07ddf4dbe1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11f98e2d0>]}
+[0m09:08:33.574655 [info ] [MainThread]: Registered adapter: snowflake=1.9.0
+[0m09:08:33.662063 [debug] [MainThread]: checksum: c99e828bba267739642b5a3ce85f17518764ea526e0e6c4fdc649171c1a66bff, vars: {}, profile: , target: , version: 1.9.0
+[0m09:08:33.737265 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m09:08:33.737508 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m09:08:33.740343 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 2 unused configuration paths:
+- models.DBT-DEMO.staging
+- models.DBT-DEMO.marts
+[0m09:08:33.759330 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'bddfb534-5acb-45fd-8ea5-0e07ddf4dbe1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11f9f60c0>]}
+[0m09:08:33.806336 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/pradeeprai/PycharmProjects/DBT-DEMO/target/manifest.json
+[0m09:08:33.813153 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/pradeeprai/PycharmProjects/DBT-DEMO/target/semantic_manifest.json
+[0m09:08:33.826528 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'bddfb534-5acb-45fd-8ea5-0e07ddf4dbe1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11fb2eed0>]}
+[0m09:08:33.826799 [info ] [MainThread]: Found 1 model, 53 data tests, 8 sources, 591 macros
+[0m09:08:33.826963 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'bddfb534-5acb-45fd-8ea5-0e07ddf4dbe1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x129df4230>]}
+[0m09:08:33.828760 [info ] [MainThread]: 
+[0m09:08:33.828946 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m09:08:33.829074 [info ] [MainThread]: 
+[0m09:08:33.829315 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m09:08:33.829744 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_edw_dev_stg'
+[0m09:08:33.862246 [debug] [ThreadPool]: Using snowflake connection "list_edw_dev_stg"
+[0m09:08:33.862466 [debug] [ThreadPool]: On list_edw_dev_stg: /* {"app": "dbt", "dbt_version": "1.9.0", "profile_name": "tasty_bytes", "target_name": "dev", "connection_name": "list_edw_dev_stg"} */
+show terse schemas in database edw_dev_stg
+    limit 10000
+[0m09:08:33.862605 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m09:08:38.315068 [debug] [ThreadPool]: Snowflake adapter: Error running SQL: /* {"app": "dbt", "dbt_version": "1.9.0", "profile_name": "tasty_bytes", "target_name": "dev", "connection_name": "list_edw_dev_stg"} */
+show terse schemas in database edw_dev_stg
+    limit 10000
+[0m09:08:38.316300 [debug] [ThreadPool]: Snowflake adapter: Rolling back transaction.
+[0m09:08:38.317038 [debug] [ThreadPool]: Snowflake adapter: Error running SQL: macro list_schemas
+[0m09:08:38.317588 [debug] [ThreadPool]: Snowflake adapter: Rolling back transaction.
+[0m09:08:38.319004 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m09:08:38.319636 [debug] [MainThread]: Connection 'list_edw_dev_stg' was left open.
+[0m09:08:38.320115 [debug] [MainThread]: On list_edw_dev_stg: No close available on handle
+[0m09:08:38.320487 [info ] [MainThread]: 
+[0m09:08:38.320907 [info ] [MainThread]: Finished running  in 0 hours 0 minutes and 4.49 seconds (4.49s).
+[0m09:08:38.321553 [error] [MainThread]: Encountered an error:
+Runtime Error
+  Database error while listing schemas in database "edw_dev_stg"
+  Database Error
+    290404 (08001): 404 Not Found: post TAIZQZT-QP81056.snowflakecomputing.com.snowflakecomputing.com:443/session/v1/login-request
+[0m09:08:38.326223 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 5.4232864, "process_in_blocks": "0", "process_kernel_time": 0.684703, "process_mem_max_rss": "200048640", "process_out_blocks": "0", "process_user_time": 3.113593}
+[0m09:08:38.326560 [debug] [MainThread]: Command `dbt run` failed at 09:08:38.326503 after 5.42 seconds
+[0m09:08:38.326750 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10452abd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11f5f1100>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1083e0350>]}
+[0m09:08:38.326941 [debug] [MainThread]: Flushing usage events
+[0m09:08:39.556325 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m09:09:25.629088 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1067ac320>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107f28ec0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107f28cb0>]}
+
+
+============================== 09:09:25.633152 | 794bf736-f7f1-49cd-98f0-b00019f28931 ==============================
+[0m09:09:25.633152 [info ] [MainThread]: Running with dbt=1.9.0
+[0m09:09:25.633525 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/Users/pradeeprai/PycharmProjects/DBT-DEMO', 'debug': 'False', 'version_check': 'True', 'log_path': '/Users/pradeeprai/PycharmProjects/DBT-DEMO/logs', 'warn_error': 'None', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'static_parser': 'True', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'invocation_command': 'dbt run -m models/staging/country.sql', 'send_anonymous_usage_stats': 'True'}
+[0m09:09:26.258543 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '794bf736-f7f1-49cd-98f0-b00019f28931', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x14a67d130>]}
+[0m09:09:26.285784 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '794bf736-f7f1-49cd-98f0-b00019f28931', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1054e19a0>]}
+[0m09:09:26.286380 [info ] [MainThread]: Registered adapter: snowflake=1.9.0
+[0m09:09:26.372089 [debug] [MainThread]: checksum: c99e828bba267739642b5a3ce85f17518764ea526e0e6c4fdc649171c1a66bff, vars: {}, profile: , target: , version: 1.9.0
+[0m09:09:26.450621 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m09:09:26.450861 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m09:09:26.453468 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 2 unused configuration paths:
+- models.DBT-DEMO.marts
+- models.DBT-DEMO.staging
+[0m09:09:26.472380 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '794bf736-f7f1-49cd-98f0-b00019f28931', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x14a72e780>]}
+[0m09:09:26.520787 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/pradeeprai/PycharmProjects/DBT-DEMO/target/manifest.json
+[0m09:09:26.528167 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/pradeeprai/PycharmProjects/DBT-DEMO/target/semantic_manifest.json
+[0m09:09:26.542116 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '794bf736-f7f1-49cd-98f0-b00019f28931', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x14a9fdd60>]}
+[0m09:09:26.542394 [info ] [MainThread]: Found 1 model, 53 data tests, 8 sources, 591 macros
+[0m09:09:26.542558 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '794bf736-f7f1-49cd-98f0-b00019f28931', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x14aa17560>]}
+[0m09:09:26.544264 [info ] [MainThread]: 
+[0m09:09:26.544441 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m09:09:26.544563 [info ] [MainThread]: 
+[0m09:09:26.544797 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m09:09:26.545246 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_edw_dev_stg'
+[0m09:09:26.577426 [debug] [ThreadPool]: Using snowflake connection "list_edw_dev_stg"
+[0m09:09:26.577648 [debug] [ThreadPool]: On list_edw_dev_stg: /* {"app": "dbt", "dbt_version": "1.9.0", "profile_name": "tasty_bytes", "target_name": "dev", "connection_name": "list_edw_dev_stg"} */
+show terse schemas in database edw_dev_stg
+    limit 10000
+[0m09:09:26.577781 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m09:09:29.985275 [debug] [ThreadPool]: Snowflake adapter: Error running SQL: /* {"app": "dbt", "dbt_version": "1.9.0", "profile_name": "tasty_bytes", "target_name": "dev", "connection_name": "list_edw_dev_stg"} */
+show terse schemas in database edw_dev_stg
+    limit 10000
+[0m09:09:29.986377 [debug] [ThreadPool]: Snowflake adapter: Rolling back transaction.
+[0m09:09:29.987295 [debug] [ThreadPool]: Snowflake adapter: Error running SQL: macro list_schemas
+[0m09:09:29.987813 [debug] [ThreadPool]: Snowflake adapter: Rolling back transaction.
+[0m09:09:29.988960 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m09:09:29.989456 [debug] [MainThread]: Connection 'list_edw_dev_stg' was left open.
+[0m09:09:29.989857 [debug] [MainThread]: On list_edw_dev_stg: No close available on handle
+[0m09:09:29.990237 [info ] [MainThread]: 
+[0m09:09:29.990642 [info ] [MainThread]: Finished running  in 0 hours 0 minutes and 3.45 seconds (3.45s).
+[0m09:09:29.991323 [error] [MainThread]: Encountered an error:
+Runtime Error
+  Database error while listing schemas in database "edw_dev_stg"
+  Database Error
+    290404 (08001): 404 Not Found: post TAIZQZT-QP81056.snowflakecomputing.com.snowflakecomputing.com:443/session/v1/login-request
+[0m09:09:29.998067 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 4.407671, "process_in_blocks": "0", "process_kernel_time": 0.626517, "process_mem_max_rss": "195788800", "process_out_blocks": "0", "process_user_time": 2.916296}
+[0m09:09:29.998666 [debug] [MainThread]: Command `dbt run` failed at 09:09:29.998542 after 4.41 seconds
+[0m09:09:29.999104 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10455e5d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104a90a70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x14bbb13a0>]}
+[0m09:09:29.999501 [debug] [MainThread]: Flushing usage events
+[0m09:09:31.258318 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m09:09:52.003452 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x102742000>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10752cf20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10752cd40>]}
+
+
+============================== 09:09:52.008123 | 6533c68b-18ed-4c80-b72a-4d9881ba7bee ==============================
+[0m09:09:52.008123 [info ] [MainThread]: Running with dbt=1.9.0
+[0m09:09:52.008468 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'profiles_dir': '/Users/pradeeprai/PycharmProjects/DBT-DEMO', 'log_path': '/Users/pradeeprai/PycharmProjects/DBT-DEMO/logs', 'fail_fast': 'False', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'invocation_command': 'dbt run -m models/staging/country.sql', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m09:09:52.590993 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '6533c68b-18ed-4c80-b72a-4d9881ba7bee', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105e1bad0>]}
+[0m09:09:52.617841 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '6533c68b-18ed-4c80-b72a-4d9881ba7bee', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1067ab860>]}
+[0m09:09:52.618754 [info ] [MainThread]: Registered adapter: snowflake=1.9.0
+[0m09:09:52.704533 [debug] [MainThread]: checksum: c99e828bba267739642b5a3ce85f17518764ea526e0e6c4fdc649171c1a66bff, vars: {}, profile: , target: , version: 1.9.0
+[0m09:09:52.777421 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m09:09:52.777647 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m09:09:52.780266 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 2 unused configuration paths:
+- models.DBT-DEMO.staging
+- models.DBT-DEMO.marts
+[0m09:09:52.798828 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '6533c68b-18ed-4c80-b72a-4d9881ba7bee', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x148191580>]}
+[0m09:09:52.846108 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/pradeeprai/PycharmProjects/DBT-DEMO/target/manifest.json
+[0m09:09:52.855275 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/pradeeprai/PycharmProjects/DBT-DEMO/target/semantic_manifest.json
+[0m09:09:52.868529 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '6533c68b-18ed-4c80-b72a-4d9881ba7bee', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1487383b0>]}
+[0m09:09:52.868787 [info ] [MainThread]: Found 1 model, 53 data tests, 8 sources, 591 macros
+[0m09:09:52.868947 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '6533c68b-18ed-4c80-b72a-4d9881ba7bee', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x14839a420>]}
+[0m09:09:52.870648 [info ] [MainThread]: 
+[0m09:09:52.871000 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m09:09:52.871181 [info ] [MainThread]: 
+[0m09:09:52.871453 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m09:09:52.871907 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_edw_dev_stg'
+[0m09:09:52.903975 [debug] [ThreadPool]: Using snowflake connection "list_edw_dev_stg"
+[0m09:09:52.904292 [debug] [ThreadPool]: On list_edw_dev_stg: /* {"app": "dbt", "dbt_version": "1.9.0", "profile_name": "tasty_bytes", "target_name": "dev", "connection_name": "list_edw_dev_stg"} */
+show terse schemas in database edw_dev_stg
+    limit 10000
+[0m09:09:52.904439 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m09:09:56.412285 [debug] [ThreadPool]: Snowflake adapter: Error running SQL: /* {"app": "dbt", "dbt_version": "1.9.0", "profile_name": "tasty_bytes", "target_name": "dev", "connection_name": "list_edw_dev_stg"} */
+show terse schemas in database edw_dev_stg
+    limit 10000
+[0m09:09:56.413207 [debug] [ThreadPool]: Snowflake adapter: Rolling back transaction.
+[0m09:09:56.413903 [debug] [ThreadPool]: Snowflake adapter: Error running SQL: macro list_schemas
+[0m09:09:56.414377 [debug] [ThreadPool]: Snowflake adapter: Rolling back transaction.
+[0m09:09:56.415362 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m09:09:56.415720 [debug] [MainThread]: Connection 'list_edw_dev_stg' was left open.
+[0m09:09:56.416072 [debug] [MainThread]: On list_edw_dev_stg: No close available on handle
+[0m09:09:56.416418 [info ] [MainThread]: 
+[0m09:09:56.416792 [info ] [MainThread]: Finished running  in 0 hours 0 minutes and 3.55 seconds (3.55s).
+[0m09:09:56.417408 [error] [MainThread]: Encountered an error:
+Runtime Error
+  Database error while listing schemas in database "edw_dev_stg"
+  Database Error
+    290404 (08001): 404 Not Found: post TAIZQZT-QP81056.snowflakecomputing.com.snowflakecomputing.com:443/session/v1/login-request
+[0m09:09:56.424224 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 4.4552073, "process_in_blocks": "0", "process_kernel_time": 0.610731, "process_mem_max_rss": "197902336", "process_out_blocks": "0", "process_user_time": 2.941975}
+[0m09:09:56.424836 [debug] [MainThread]: Command `dbt run` failed at 09:09:56.424722 after 4.46 seconds
+[0m09:09:56.425228 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1067a94f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x149eb1880>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x149eb18e0>]}
+[0m09:09:56.425610 [debug] [MainThread]: Flushing usage events
+[0m09:09:57.644897 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m09:10:29.562119 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105ff83b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10782cfb0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10782cdd0>]}
+
+
+============================== 09:10:29.566292 | 0db02143-b94e-48b7-a72d-e7164e137a07 ==============================
+[0m09:10:29.566292 [info ] [MainThread]: Running with dbt=1.9.0
+[0m09:10:29.566602 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'debug': 'False', 'log_path': '/Users/pradeeprai/PycharmProjects/DBT-DEMO/logs', 'fail_fast': 'False', 'profiles_dir': '/Users/pradeeprai/PycharmProjects/DBT-DEMO', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'invocation_command': 'dbt run -m models/staging/country.sql', 'log_format': 'default', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m09:10:30.194806 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '0db02143-b94e-48b7-a72d-e7164e137a07', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x12ed1ef90>]}
+[0m09:10:30.221565 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '0db02143-b94e-48b7-a72d-e7164e137a07', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1071ac680>]}
+[0m09:10:30.222176 [info ] [MainThread]: Registered adapter: snowflake=1.9.0
+[0m09:10:30.306564 [debug] [MainThread]: checksum: c99e828bba267739642b5a3ce85f17518764ea526e0e6c4fdc649171c1a66bff, vars: {}, profile: , target: , version: 1.9.0
+[0m09:10:30.355872 [info ] [MainThread]: Unable to do partial parsing because profile has changed
+[0m09:10:30.356191 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '0db02143-b94e-48b7-a72d-e7164e137a07', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107185970>]}
+[0m09:10:31.103685 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 2 unused configuration paths:
+- models.DBT-DEMO.marts
+- models.DBT-DEMO.staging
+[0m09:10:31.110156 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '0db02143-b94e-48b7-a72d-e7164e137a07', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x12f6af800>]}
+[0m09:10:31.156614 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/pradeeprai/PycharmProjects/DBT-DEMO/target/manifest.json
+[0m09:10:31.163378 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/pradeeprai/PycharmProjects/DBT-DEMO/target/semantic_manifest.json
+[0m09:10:31.178875 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '0db02143-b94e-48b7-a72d-e7164e137a07', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x12f74a210>]}
+[0m09:10:31.179164 [info ] [MainThread]: Found 1 model, 53 data tests, 8 sources, 591 macros
+[0m09:10:31.179322 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '0db02143-b94e-48b7-a72d-e7164e137a07', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x12f6678f0>]}
+[0m09:10:31.181026 [info ] [MainThread]: 
+[0m09:10:31.181194 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m09:10:31.181315 [info ] [MainThread]: 
+[0m09:10:31.181537 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m09:10:31.181936 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_edw_dev_stg'
+[0m09:10:31.213164 [debug] [ThreadPool]: Using snowflake connection "list_edw_dev_stg"
+[0m09:10:31.213383 [debug] [ThreadPool]: On list_edw_dev_stg: /* {"app": "dbt", "dbt_version": "1.9.0", "profile_name": "tasty_bytes", "target_name": "dev", "connection_name": "list_edw_dev_stg"} */
+show terse schemas in database edw_dev_stg
+    limit 10000
+[0m09:10:31.213521 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m09:10:34.485907 [debug] [ThreadPool]: SQL status: SUCCESS 3 in 3.272 seconds
+[0m09:10:34.489924 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_edw_dev_stg, now create_edw_dev_stg_sa)
+[0m09:10:34.490800 [debug] [ThreadPool]: Creating schema "database: "edw_dev_stg"
+schema: "sa"
+"
+[0m09:10:34.498306 [debug] [ThreadPool]: Using snowflake connection "create_edw_dev_stg_sa"
+[0m09:10:34.498792 [debug] [ThreadPool]: On create_edw_dev_stg_sa: /* {"app": "dbt", "dbt_version": "1.9.0", "profile_name": "tasty_bytes", "target_name": "dev", "connection_name": "create_edw_dev_stg_sa"} */
+create schema if not exists edw_dev_stg.sa
+[0m09:10:34.634451 [debug] [ThreadPool]: SQL status: SUCCESS 1 in 0.135 seconds
+[0m09:10:34.638530 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly create_edw_dev_stg_sa, now list_edw_dev_stg_sa)
+[0m09:10:34.654447 [debug] [ThreadPool]: Using snowflake connection "list_edw_dev_stg_sa"
+[0m09:10:34.654916 [debug] [ThreadPool]: On list_edw_dev_stg_sa: /* {"app": "dbt", "dbt_version": "1.9.0", "profile_name": "tasty_bytes", "target_name": "dev", "connection_name": "list_edw_dev_stg_sa"} */
+show objects in edw_dev_stg.sa limit 10000;
+[0m09:10:34.784578 [debug] [ThreadPool]: SQL status: SUCCESS 0 in 0.129 seconds
+[0m09:10:34.788052 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '0db02143-b94e-48b7-a72d-e7164e137a07', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x12f45ffe0>]}
+[0m09:10:34.789854 [debug] [Thread-1 (]: Began running node model.tasty_bytes.country
+[0m09:10:34.790601 [info ] [Thread-1 (]: 1 of 1 START sql table model sa.country ........................................ [RUN]
+[0m09:10:34.791200 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_edw_dev_stg_sa, now model.tasty_bytes.country)
+[0m09:10:34.791643 [debug] [Thread-1 (]: Began compiling node model.tasty_bytes.country
+[0m09:10:34.802651 [debug] [Thread-1 (]: Writing injected SQL for node "model.tasty_bytes.country"
+[0m09:10:34.804124 [debug] [Thread-1 (]: Began executing node model.tasty_bytes.country
+[0m09:10:34.834650 [debug] [Thread-1 (]: Writing runtime sql for node "model.tasty_bytes.country"
+[0m09:10:34.835883 [debug] [Thread-1 (]: Using snowflake connection "model.tasty_bytes.country"
+[0m09:10:34.836182 [debug] [Thread-1 (]: On model.tasty_bytes.country: /* {"app": "dbt", "dbt_version": "1.9.0", "profile_name": "tasty_bytes", "target_name": "dev", "node_id": "model.tasty_bytes.country"} */
+create or replace transient table edw_dev_stg.sa.country
+         as
+        (
+
+SELECT 'Afghanistan' AS name, 'AF' AS iso_code
+UNION ALL
+SELECT 'Albania', 'AL'
+UNION ALL
+SELECT 'Algeria', 'DZ'
+UNION ALL
+SELECT 'India', 'IN'
+UNION ALL
+SELECT 'United States', 'US'
+UNION ALL
+SELECT 'Japan', 'JP';
+[0m09:10:34.960679 [debug] [Thread-1 (]: Snowflake adapter: Snowflake query id: 01c0069c-3202-0e04-0000-0010f3722ce1
+[0m09:10:34.961298 [debug] [Thread-1 (]: Snowflake adapter: Snowflake error: 001003 (42000): SQL compilation error:
+syntax error line 15 at position 20 unexpected ';'.
+[0m09:10:34.966912 [debug] [Thread-1 (]: Database Error in model country (models/staging/country.sql)
+  001003 (42000): SQL compilation error:
+  syntax error line 15 at position 20 unexpected ';'.
+  compiled code at target/run/tasty_bytes/models/staging/country.sql
+[0m09:10:34.969356 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '0db02143-b94e-48b7-a72d-e7164e137a07', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x12f78f9e0>]}
+[0m09:10:34.970156 [error] [Thread-1 (]: 1 of 1 ERROR creating sql table model sa.country ............................... [[31mERROR[0m in 0.18s]
+[0m09:10:34.970827 [debug] [Thread-1 (]: Finished running node model.tasty_bytes.country
+[0m09:10:34.971400 [debug] [Thread-4 (]: Marking all children of 'model.tasty_bytes.country' to be skipped because of status 'error'.  Reason: Database Error in model country (models/staging/country.sql)
+  001003 (42000): SQL compilation error:
+  syntax error line 15 at position 20 unexpected ';'.
+  compiled code at target/run/tasty_bytes/models/staging/country.sql.
+[0m09:10:34.973280 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m09:10:34.973621 [debug] [MainThread]: Connection 'model.tasty_bytes.country' was left open.
+[0m09:10:34.973917 [debug] [MainThread]: On model.tasty_bytes.country: Close
+[0m09:10:35.189515 [info ] [MainThread]: 
+[0m09:10:35.190344 [info ] [MainThread]: Finished running 1 table model in 0 hours 0 minutes and 4.01 seconds (4.01s).
+[0m09:10:35.191435 [debug] [MainThread]: Command end result
+[0m09:10:35.233784 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/pradeeprai/PycharmProjects/DBT-DEMO/target/manifest.json
+[0m09:10:35.235438 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/pradeeprai/PycharmProjects/DBT-DEMO/target/semantic_manifest.json
+[0m09:10:35.239877 [debug] [MainThread]: Wrote artifact RunExecutionResult to /Users/pradeeprai/PycharmProjects/DBT-DEMO/target/run_results.json
+[0m09:10:35.240138 [info ] [MainThread]: 
+[0m09:10:35.240412 [info ] [MainThread]: [31mCompleted with 1 error, 0 partial successes, and 0 warnings:[0m
+[0m09:10:35.240623 [info ] [MainThread]: 
+[0m09:10:35.240878 [error] [MainThread]:   Database Error in model country (models/staging/country.sql)
+  001003 (42000): SQL compilation error:
+  syntax error line 15 at position 20 unexpected ';'.
+  compiled code at target/run/tasty_bytes/models/staging/country.sql
+[0m09:10:35.241081 [info ] [MainThread]: 
+[0m09:10:35.241293 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=1 SKIP=0 TOTAL=1
+[0m09:10:35.244962 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 5.72117, "process_in_blocks": "0", "process_kernel_time": 0.68694, "process_mem_max_rss": "209715200", "process_out_blocks": "0", "process_user_time": 3.822234}
+[0m09:10:35.245296 [debug] [MainThread]: Command `dbt run` failed at 09:10:35.245233 after 5.72 seconds
+[0m09:10:35.245544 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x12f5c6000>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x100a9e870>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x12f4faff0>]}
+[0m09:10:35.245776 [debug] [MainThread]: Flushing usage events
+[0m09:10:36.620953 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m09:11:05.720556 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1114c19a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1116bb0b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x111728e90>]}
+
+
+============================== 09:11:05.724553 | 38b63d46-add8-48af-bec8-9a48122e9ee0 ==============================
+[0m09:11:05.724553 [info ] [MainThread]: Running with dbt=1.9.0
+[0m09:11:05.724875 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/Users/pradeeprai/PycharmProjects/DBT-DEMO', 'version_check': 'True', 'debug': 'False', 'log_path': '/Users/pradeeprai/PycharmProjects/DBT-DEMO/logs', 'fail_fast': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'log_format': 'default', 'invocation_command': 'dbt run -m models/staging/country.sql', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m09:11:06.351034 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '38b63d46-add8-48af-bec8-9a48122e9ee0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107feb5c0>]}
+[0m09:11:06.378320 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '38b63d46-add8-48af-bec8-9a48122e9ee0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1041c6810>]}
+[0m09:11:06.378958 [info ] [MainThread]: Registered adapter: snowflake=1.9.0
+[0m09:11:06.463599 [debug] [MainThread]: checksum: c99e828bba267739642b5a3ce85f17518764ea526e0e6c4fdc649171c1a66bff, vars: {}, profile: , target: , version: 1.9.0
+[0m09:11:06.539688 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m09:11:06.540101 [debug] [MainThread]: Partial parsing: updated file: tasty_bytes://models/staging/country.sql
+[0m09:11:06.654397 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 2 unused configuration paths:
+- models.DBT-DEMO.staging
+- models.DBT-DEMO.marts
+[0m09:11:06.662000 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '38b63d46-add8-48af-bec8-9a48122e9ee0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1346f7590>]}
+[0m09:11:06.708065 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/pradeeprai/PycharmProjects/DBT-DEMO/target/manifest.json
+[0m09:11:06.716218 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/pradeeprai/PycharmProjects/DBT-DEMO/target/semantic_manifest.json
+[0m09:11:06.730335 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '38b63d46-add8-48af-bec8-9a48122e9ee0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1346e7b30>]}
+[0m09:11:06.730620 [info ] [MainThread]: Found 53 data tests, 1 model, 8 sources, 591 macros
+[0m09:11:06.730785 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '38b63d46-add8-48af-bec8-9a48122e9ee0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x135013e60>]}
+[0m09:11:06.732511 [info ] [MainThread]: 
+[0m09:11:06.732686 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m09:11:06.732809 [info ] [MainThread]: 
+[0m09:11:06.733043 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m09:11:06.733451 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_edw_dev_stg'
+[0m09:11:06.806128 [debug] [ThreadPool]: Using snowflake connection "list_edw_dev_stg"
+[0m09:11:06.806360 [debug] [ThreadPool]: On list_edw_dev_stg: /* {"app": "dbt", "dbt_version": "1.9.0", "profile_name": "tasty_bytes", "target_name": "dev", "connection_name": "list_edw_dev_stg"} */
+show terse schemas in database edw_dev_stg
+    limit 10000
+[0m09:11:06.806494 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m09:11:07.795047 [debug] [ThreadPool]: SQL status: SUCCESS 4 in 0.988 seconds
+[0m09:11:07.799730 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_edw_dev_stg, now list_edw_dev_stg_sa)
+[0m09:11:07.815066 [debug] [ThreadPool]: Using snowflake connection "list_edw_dev_stg_sa"
+[0m09:11:07.815567 [debug] [ThreadPool]: On list_edw_dev_stg_sa: /* {"app": "dbt", "dbt_version": "1.9.0", "profile_name": "tasty_bytes", "target_name": "dev", "connection_name": "list_edw_dev_stg_sa"} */
+show objects in edw_dev_stg.sa limit 10000;
+[0m09:11:07.950990 [debug] [ThreadPool]: SQL status: SUCCESS 0 in 0.135 seconds
+[0m09:11:07.955819 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '38b63d46-add8-48af-bec8-9a48122e9ee0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1344601a0>]}
+[0m09:11:07.958364 [debug] [Thread-1 (]: Began running node model.tasty_bytes.country
+[0m09:11:07.959171 [info ] [Thread-1 (]: 1 of 1 START sql table model sa.country ........................................ [RUN]
+[0m09:11:07.959813 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_edw_dev_stg_sa, now model.tasty_bytes.country)
+[0m09:11:07.960293 [debug] [Thread-1 (]: Began compiling node model.tasty_bytes.country
+[0m09:11:07.972065 [debug] [Thread-1 (]: Writing injected SQL for node "model.tasty_bytes.country"
+[0m09:11:07.973063 [debug] [Thread-1 (]: Began executing node model.tasty_bytes.country
+[0m09:11:08.004245 [debug] [Thread-1 (]: Writing runtime sql for node "model.tasty_bytes.country"
+[0m09:11:08.005242 [debug] [Thread-1 (]: Using snowflake connection "model.tasty_bytes.country"
+[0m09:11:08.005540 [debug] [Thread-1 (]: On model.tasty_bytes.country: /* {"app": "dbt", "dbt_version": "1.9.0", "profile_name": "tasty_bytes", "target_name": "dev", "node_id": "model.tasty_bytes.country"} */
+create or replace transient table edw_dev_stg.sa.country
+         as
+        (
+
+SELECT 'Afghanistan' AS name, 'AF' AS iso_code
+UNION ALL
+SELECT 'Albania', 'AL'
+UNION ALL
+SELECT 'Algeria', 'DZ'
+UNION ALL
+SELECT 'India', 'IN'
+UNION ALL
+SELECT 'United States', 'US'
+UNION ALL
+SELECT 'Japan', 'JP'
+        );
+[0m09:11:08.855360 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.849 seconds
+[0m09:11:08.888806 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '38b63d46-add8-48af-bec8-9a48122e9ee0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107fad760>]}
+[0m09:11:08.889542 [info ] [Thread-1 (]: 1 of 1 OK created sql table model sa.country ................................... [[32mSUCCESS 1[0m in 0.93s]
+[0m09:11:08.890068 [debug] [Thread-1 (]: Finished running node model.tasty_bytes.country
+[0m09:11:08.891033 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m09:11:08.891318 [debug] [MainThread]: Connection 'model.tasty_bytes.country' was left open.
+[0m09:11:08.891554 [debug] [MainThread]: On model.tasty_bytes.country: Close
+[0m09:11:09.119935 [info ] [MainThread]: 
+[0m09:11:09.121034 [info ] [MainThread]: Finished running 1 table model in 0 hours 0 minutes and 2.39 seconds (2.39s).
+[0m09:11:09.122344 [debug] [MainThread]: Command end result
+[0m09:11:09.164555 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/pradeeprai/PycharmProjects/DBT-DEMO/target/manifest.json
+[0m09:11:09.166213 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/pradeeprai/PycharmProjects/DBT-DEMO/target/semantic_manifest.json
+[0m09:11:09.170686 [debug] [MainThread]: Wrote artifact RunExecutionResult to /Users/pradeeprai/PycharmProjects/DBT-DEMO/target/run_results.json
+[0m09:11:09.170956 [info ] [MainThread]: 
+[0m09:11:09.171248 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m09:11:09.171450 [info ] [MainThread]: 
+[0m09:11:09.171674 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 TOTAL=1
+[0m09:11:09.175548 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 3.4911544, "process_in_blocks": "0", "process_kernel_time": 0.739962, "process_mem_max_rss": "199983104", "process_out_blocks": "0", "process_user_time": 3.090638}
+[0m09:11:09.175931 [debug] [MainThread]: Command `dbt run` succeeded at 09:11:09.175865 after 3.49 seconds
+[0m09:11:09.176187 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1116bb0b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1116bbef0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x124e32a80>]}
+[0m09:11:09.176428 [debug] [MainThread]: Flushing usage events
+[0m09:11:10.527734 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m09:12:03.044932 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x102cf5df0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10622cd70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10622cb90>]}
+
+
+============================== 09:12:03.048898 | 733de3ca-cdc6-4eb1-91ac-9d9f2ff88d78 ==============================
+[0m09:12:03.048898 [info ] [MainThread]: Running with dbt=1.9.0
+[0m09:12:03.049229 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/Users/pradeeprai/PycharmProjects/DBT-DEMO', 'fail_fast': 'False', 'warn_error': 'None', 'log_path': '/Users/pradeeprai/PycharmProjects/DBT-DEMO/logs', 'version_check': 'True', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'static_parser': 'True', 'invocation_command': 'dbt run -m models/staging/country.sql', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m09:12:03.679717 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '733de3ca-cdc6-4eb1-91ac-9d9f2ff88d78', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11e10c980>]}
+[0m09:12:03.706229 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '733de3ca-cdc6-4eb1-91ac-9d9f2ff88d78', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x102def170>]}
+[0m09:12:03.706829 [info ] [MainThread]: Registered adapter: snowflake=1.9.0
+[0m09:12:03.794680 [debug] [MainThread]: checksum: c99e828bba267739642b5a3ce85f17518764ea526e0e6c4fdc649171c1a66bff, vars: {}, profile: , target: , version: 1.9.0
+[0m09:12:03.870196 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m09:12:03.870588 [debug] [MainThread]: Partial parsing: updated file: tasty_bytes://models/staging/country.sql
+[0m09:12:03.986108 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 2 unused configuration paths:
+- models.DBT-DEMO.staging
+- models.DBT-DEMO.marts
+[0m09:12:03.993172 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '733de3ca-cdc6-4eb1-91ac-9d9f2ff88d78', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11f0f3230>]}
+[0m09:12:04.040374 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/pradeeprai/PycharmProjects/DBT-DEMO/target/manifest.json
+[0m09:12:04.047557 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/pradeeprai/PycharmProjects/DBT-DEMO/target/semantic_manifest.json
+[0m09:12:04.062019 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '733de3ca-cdc6-4eb1-91ac-9d9f2ff88d78', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10f8e6750>]}
+[0m09:12:04.062293 [info ] [MainThread]: Found 53 data tests, 1 model, 8 sources, 591 macros
+[0m09:12:04.062456 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '733de3ca-cdc6-4eb1-91ac-9d9f2ff88d78', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11e6a0c80>]}
+[0m09:12:04.064190 [info ] [MainThread]: 
+[0m09:12:04.064370 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m09:12:04.064497 [info ] [MainThread]: 
+[0m09:12:04.064731 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m09:12:04.065143 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_edw_dev_stg'
+[0m09:12:04.137344 [debug] [ThreadPool]: Using snowflake connection "list_edw_dev_stg"
+[0m09:12:04.137593 [debug] [ThreadPool]: On list_edw_dev_stg: /* {"app": "dbt", "dbt_version": "1.9.0", "profile_name": "tasty_bytes", "target_name": "dev", "connection_name": "list_edw_dev_stg"} */
+show terse schemas in database edw_dev_stg
+    limit 10000
+[0m09:12:04.137781 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m09:12:07.396341 [debug] [ThreadPool]: SQL status: SUCCESS 4 in 3.258 seconds
+[0m09:12:07.400546 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_edw_dev_stg, now create_edw_dev_stg_dev)
+[0m09:12:07.401588 [debug] [ThreadPool]: Creating schema "database: "edw_dev_stg"
+schema: "dev"
+"
+[0m09:12:07.409178 [debug] [ThreadPool]: Using snowflake connection "create_edw_dev_stg_dev"
+[0m09:12:07.409678 [debug] [ThreadPool]: On create_edw_dev_stg_dev: /* {"app": "dbt", "dbt_version": "1.9.0", "profile_name": "tasty_bytes", "target_name": "dev", "connection_name": "create_edw_dev_stg_dev"} */
+create schema if not exists edw_dev_stg.dev
+[0m09:12:07.560071 [debug] [ThreadPool]: SQL status: SUCCESS 1 in 0.150 seconds
+[0m09:12:07.563279 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly create_edw_dev_stg_dev, now list_edw_dev_stg_dev)
+[0m09:12:07.578135 [debug] [ThreadPool]: Using snowflake connection "list_edw_dev_stg_dev"
+[0m09:12:07.578613 [debug] [ThreadPool]: On list_edw_dev_stg_dev: /* {"app": "dbt", "dbt_version": "1.9.0", "profile_name": "tasty_bytes", "target_name": "dev", "connection_name": "list_edw_dev_stg_dev"} */
+show objects in edw_dev_stg.dev limit 10000;
+[0m09:12:07.709767 [debug] [ThreadPool]: SQL status: SUCCESS 0 in 0.131 seconds
+[0m09:12:07.714779 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '733de3ca-cdc6-4eb1-91ac-9d9f2ff88d78', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11f00c770>]}
+[0m09:12:07.717300 [debug] [Thread-1 (]: Began running node model.tasty_bytes.country
+[0m09:12:07.718074 [info ] [Thread-1 (]: 1 of 1 START sql table model dev.country ....................................... [RUN]
+[0m09:12:07.718681 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_edw_dev_stg_dev, now model.tasty_bytes.country)
+[0m09:12:07.719121 [debug] [Thread-1 (]: Began compiling node model.tasty_bytes.country
+[0m09:12:07.730214 [debug] [Thread-1 (]: Writing injected SQL for node "model.tasty_bytes.country"
+[0m09:12:07.731130 [debug] [Thread-1 (]: Began executing node model.tasty_bytes.country
+[0m09:12:07.764104 [debug] [Thread-1 (]: Writing runtime sql for node "model.tasty_bytes.country"
+[0m09:12:07.765033 [debug] [Thread-1 (]: Using snowflake connection "model.tasty_bytes.country"
+[0m09:12:07.765328 [debug] [Thread-1 (]: On model.tasty_bytes.country: /* {"app": "dbt", "dbt_version": "1.9.0", "profile_name": "tasty_bytes", "target_name": "dev", "node_id": "model.tasty_bytes.country"} */
+create or replace transient table edw_dev_stg.dev.country
+         as
+        (
+
+SELECT 'Afghanistan' AS name, 'AF' AS iso_code
+UNION ALL
+SELECT 'Albania', 'AL'
+UNION ALL
+SELECT 'Algeria', 'DZ'
+UNION ALL
+SELECT 'India', 'IN'
+UNION ALL
+SELECT 'United States', 'US'
+UNION ALL
+SELECT 'Japan', 'JP'
+        );
+[0m09:12:08.292529 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.526 seconds
+[0m09:12:08.328252 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '733de3ca-cdc6-4eb1-91ac-9d9f2ff88d78', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104bad640>]}
+[0m09:12:08.329035 [info ] [Thread-1 (]: 1 of 1 OK created sql table model dev.country .................................. [[32mSUCCESS 1[0m in 0.61s]
+[0m09:12:08.329597 [debug] [Thread-1 (]: Finished running node model.tasty_bytes.country
+[0m09:12:08.330621 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m09:12:08.330936 [debug] [MainThread]: Connection 'model.tasty_bytes.country' was left open.
+[0m09:12:08.331181 [debug] [MainThread]: On model.tasty_bytes.country: Close
+[0m09:12:08.551749 [info ] [MainThread]: 
+[0m09:12:08.552765 [info ] [MainThread]: Finished running 1 table model in 0 hours 0 minutes and 4.49 seconds (4.49s).
+[0m09:12:08.554425 [debug] [MainThread]: Command end result
+[0m09:12:08.596185 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/pradeeprai/PycharmProjects/DBT-DEMO/target/manifest.json
+[0m09:12:08.597736 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/pradeeprai/PycharmProjects/DBT-DEMO/target/semantic_manifest.json
+[0m09:12:08.602265 [debug] [MainThread]: Wrote artifact RunExecutionResult to /Users/pradeeprai/PycharmProjects/DBT-DEMO/target/run_results.json
+[0m09:12:08.602511 [info ] [MainThread]: 
+[0m09:12:08.602802 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m09:12:08.602994 [info ] [MainThread]: 
+[0m09:12:08.603198 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 TOTAL=1
+[0m09:12:08.607078 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 5.600822, "process_in_blocks": "0", "process_kernel_time": 0.71095, "process_mem_max_rss": "203259904", "process_out_blocks": "0", "process_user_time": 3.159151}
+[0m09:12:08.607386 [debug] [MainThread]: Command `dbt run` succeeded at 09:12:08.607330 after 5.60 seconds
+[0m09:12:08.607619 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1061d35c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1061ba7b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11f0e6b10>]}
+[0m09:12:08.607842 [debug] [MainThread]: Flushing usage events
+[0m09:12:09.949291 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m09:14:38.276659 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106d68da0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106e80d70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106e80b60>]}
+
+
+============================== 09:14:38.280515 | b1cce559-5001-4289-a171-a90284901363 ==============================
+[0m09:14:38.280515 [info ] [MainThread]: Running with dbt=1.9.0
+[0m09:14:38.280825 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/Users/pradeeprai/PycharmProjects/DBT-DEMO', 'fail_fast': 'False', 'debug': 'False', 'log_path': '/Users/pradeeprai/PycharmProjects/DBT-DEMO/logs', 'warn_error': 'None', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'log_format': 'default', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'target_path': 'None', 'invocation_command': 'dbt run -m models/staging/country.sql', 'send_anonymous_usage_stats': 'True'}
+[0m09:14:38.921683 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'b1cce559-5001-4289-a171-a90284901363', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106e58470>]}
+[0m09:14:38.948538 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'b1cce559-5001-4289-a171-a90284901363', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11c4bdd30>]}
+[0m09:14:38.949173 [info ] [MainThread]: Registered adapter: snowflake=1.9.0
+[0m09:14:39.035491 [debug] [MainThread]: checksum: c99e828bba267739642b5a3ce85f17518764ea526e0e6c4fdc649171c1a66bff, vars: {}, profile: , target: , version: 1.9.0
+[0m09:14:39.085775 [info ] [MainThread]: Unable to do partial parsing because profile has changed
+[0m09:14:39.086099 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': 'b1cce559-5001-4289-a171-a90284901363', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1069d9d60>]}
+[0m09:14:39.834586 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 2 unused configuration paths:
+- models.DBT-DEMO.marts
+- models.DBT-DEMO.staging
+[0m09:14:39.840940 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'b1cce559-5001-4289-a171-a90284901363', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11d3d1580>]}
+[0m09:14:39.887054 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/pradeeprai/PycharmProjects/DBT-DEMO/target/manifest.json
+[0m09:14:39.894107 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/pradeeprai/PycharmProjects/DBT-DEMO/target/semantic_manifest.json
+[0m09:14:39.908282 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'b1cce559-5001-4289-a171-a90284901363', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11d72eae0>]}
+[0m09:14:39.908560 [info ] [MainThread]: Found 1 model, 53 data tests, 8 sources, 591 macros
+[0m09:14:39.908721 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'b1cce559-5001-4289-a171-a90284901363', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11d785b50>]}
+[0m09:14:39.910415 [info ] [MainThread]: 
+[0m09:14:39.910594 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m09:14:39.910719 [info ] [MainThread]: 
+[0m09:14:39.910935 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m09:14:39.911325 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_edw_dev_stg'
+[0m09:14:39.942606 [debug] [ThreadPool]: Using snowflake connection "list_edw_dev_stg"
+[0m09:14:39.942827 [debug] [ThreadPool]: On list_edw_dev_stg: /* {"app": "dbt", "dbt_version": "1.9.0", "profile_name": "tasty_bytes", "target_name": "dev", "connection_name": "list_edw_dev_stg"} */
+show terse schemas in database edw_dev_stg
+    limit 10000
+[0m09:14:39.942959 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m09:14:42.983565 [debug] [ThreadPool]: SQL status: SUCCESS 4 in 3.041 seconds
+[0m09:14:42.987763 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_edw_dev_stg, now list_edw_dev_stg_salesforce)
+[0m09:14:43.002410 [debug] [ThreadPool]: Using snowflake connection "list_edw_dev_stg_salesforce"
+[0m09:14:43.002906 [debug] [ThreadPool]: On list_edw_dev_stg_salesforce: /* {"app": "dbt", "dbt_version": "1.9.0", "profile_name": "tasty_bytes", "target_name": "dev", "connection_name": "list_edw_dev_stg_salesforce"} */
+show objects in edw_dev_stg.salesforce limit 10000;
+[0m09:14:43.110380 [debug] [ThreadPool]: SQL status: SUCCESS 0 in 0.107 seconds
+[0m09:14:43.112389 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'b1cce559-5001-4289-a171-a90284901363', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11d53f920>]}
+[0m09:14:43.113733 [debug] [Thread-1 (]: Began running node model.tasty_bytes.country
+[0m09:14:43.114277 [info ] [Thread-1 (]: 1 of 1 START sql table model salesforce.country ................................ [RUN]
+[0m09:14:43.114719 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_edw_dev_stg_salesforce, now model.tasty_bytes.country)
+[0m09:14:43.115044 [debug] [Thread-1 (]: Began compiling node model.tasty_bytes.country
+[0m09:14:43.124625 [debug] [Thread-1 (]: Writing injected SQL for node "model.tasty_bytes.country"
+[0m09:14:43.125629 [debug] [Thread-1 (]: Began executing node model.tasty_bytes.country
+[0m09:14:43.151203 [debug] [Thread-1 (]: Writing runtime sql for node "model.tasty_bytes.country"
+[0m09:14:43.152067 [debug] [Thread-1 (]: Using snowflake connection "model.tasty_bytes.country"
+[0m09:14:43.152313 [debug] [Thread-1 (]: On model.tasty_bytes.country: /* {"app": "dbt", "dbt_version": "1.9.0", "profile_name": "tasty_bytes", "target_name": "dev", "node_id": "model.tasty_bytes.country"} */
+create or replace transient table edw_dev_stg.salesforce.country
+         as
+        (
+
+SELECT 'Afghanistan' AS name, 'AF' AS iso_code
+UNION ALL
+SELECT 'Albania', 'AL'
+UNION ALL
+SELECT 'Algeria', 'DZ'
+UNION ALL
+SELECT 'India', 'IN'
+UNION ALL
+SELECT 'United States', 'US'
+UNION ALL
+SELECT 'Japan', 'JP'
+        );
+[0m09:14:43.612720 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.460 seconds
+[0m09:14:43.649808 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'b1cce559-5001-4289-a171-a90284901363', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11ee53d70>]}
+[0m09:14:43.650664 [info ] [Thread-1 (]: 1 of 1 OK created sql table model salesforce.country ........................... [[32mSUCCESS 1[0m in 0.53s]
+[0m09:14:43.651241 [debug] [Thread-1 (]: Finished running node model.tasty_bytes.country
+[0m09:14:43.652333 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m09:14:43.652634 [debug] [MainThread]: Connection 'model.tasty_bytes.country' was left open.
+[0m09:14:43.652875 [debug] [MainThread]: On model.tasty_bytes.country: Close
+[0m09:14:43.833108 [info ] [MainThread]: 
+[0m09:14:43.833833 [info ] [MainThread]: Finished running 1 table model in 0 hours 0 minutes and 3.92 seconds (3.92s).
+[0m09:14:43.834398 [debug] [MainThread]: Command end result
+[0m09:14:43.858591 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/pradeeprai/PycharmProjects/DBT-DEMO/target/manifest.json
+[0m09:14:43.859810 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/pradeeprai/PycharmProjects/DBT-DEMO/target/semantic_manifest.json
+[0m09:14:43.862761 [debug] [MainThread]: Wrote artifact RunExecutionResult to /Users/pradeeprai/PycharmProjects/DBT-DEMO/target/run_results.json
+[0m09:14:43.862934 [info ] [MainThread]: 
+[0m09:14:43.863134 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m09:14:43.863274 [info ] [MainThread]: 
+[0m09:14:43.863428 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 TOTAL=1
+[0m09:14:43.866228 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 5.6258492, "process_in_blocks": "0", "process_kernel_time": 0.814855, "process_mem_max_rss": "208273408", "process_out_blocks": "0", "process_user_time": 3.65076}
+[0m09:14:43.866534 [debug] [MainThread]: Command `dbt run` succeeded at 09:14:43.866482 after 5.63 seconds
+[0m09:14:43.866727 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x102852810>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11cc88fb0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11d785dc0>]}
+[0m09:14:43.866911 [debug] [MainThread]: Flushing usage events
+[0m09:14:45.324689 [debug] [MainThread]: An error was encountered while trying to flush usage events

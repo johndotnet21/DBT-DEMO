@@ -1,0 +1,13 @@
+
+
+SELECT 'Afghanistan' AS name, 'AF' AS iso_code
+UNION ALL
+SELECT 'Albania', 'AL'
+UNION ALL
+SELECT 'Algeria', 'DZ'
+UNION ALL
+SELECT 'India', 'IN'
+UNION ALL
+SELECT 'United States', 'US'
+UNION ALL
+SELECT 'Japan', 'JP'
