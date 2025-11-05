@@ -1,7 +1,7 @@
 {{ config(
     materialized='table',
     alias='country',
-    tags=['daily', 'high_priority','salesforce','customer'],
+    tags=['daily', 'high_priority','salesforce','customer','staging'],
 )
 }}
 
@@ -11,7 +11,7 @@ SELECT 'Albania', 'AL'
 UNION ALL
 SELECT 'Algeria', 'DZ'
 UNION ALL
-SELECT 'India', 'IN'
+SELECT 'India', 'IND'
 UNION ALL
 SELECT 'United States', 'US'
 UNION ALL

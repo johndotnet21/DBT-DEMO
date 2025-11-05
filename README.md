@@ -10,6 +10,8 @@ Setup Steps DBT Core -
 3) dbt --version
 3) dbt deps
 4) dbt run -m models/country.sql for demo
+5) dbt run --select tag:daily,tag:customer # running by tags
+6) dbt ls --select tag:daily # list models with tags
 
 Setup Steps for GIT - 
 1) git --version if already installed
